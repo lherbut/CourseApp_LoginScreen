@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: ad1457;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.DetailsController">
+   <children>
+      <Label fx:id="detailsWelcomeLabel" alignment="CENTER" layoutX="568.0" layoutY="7.0" prefHeight="34.0" prefWidth="118.0" text="Welcome" textFill="#322f2f">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="43.0" layoutY="48.0" prefHeight="183.0" prefWidth="615.0" style="-fx-background-color: d81b60;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="158.0" fitWidth="172.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-name-80.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="detailsName" layoutX="172.0" layoutY="21.0" prefHeight="34.0" prefWidth="290.0" text="Name:">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailsAge" layoutX="172.0" layoutY="55.0" prefHeight="34.0" prefWidth="171.0" text="Age:">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailsProfession" layoutX="172.0" layoutY="92.0" prefHeight="34.0" prefWidth="319.0" text="Profession:">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="310.0" layoutY="200.0" prefHeight="138.0" prefWidth="376.0" style="-fx-background-color: d81b60;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="87.0" layoutY="14.0" prefHeight="17.0" prefWidth="202.0" text="How to find me" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="42.0" prefHeight="21.0" prefWidth="319.0" text="LinkedIn" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="69.0" prefHeight="21.0" prefWidth="319.0" text="Github" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="95.0" prefHeight="21.0" prefWidth="319.0" text="Facebook" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="5.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-linkedin-80.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="5.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-github-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="5.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-facebook-80.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
