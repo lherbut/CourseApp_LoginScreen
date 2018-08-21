@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: ad1457;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.DetailsController">
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: ad1457;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.DetailsController">
    <children>
       <Label fx:id="detailsWelcomeLabel" alignment="CENTER" layoutX="568.0" layoutY="7.0" prefHeight="34.0" prefWidth="118.0" text="Welcome" textFill="#322f2f">
          <font>
@@ -47,22 +46,22 @@
             <DropShadow />
          </effect>
          <children>
-            <Label alignment="CENTER" layoutX="87.0" layoutY="14.0" prefHeight="17.0" prefWidth="202.0" text="How to find me" textAlignment="CENTER">
+            <Label alignment="CENTER" layoutX="87.0" layoutY="14.0" prefHeight="17.0" prefWidth="202.0" text="How to find me" textAlignment="CENTER" textFill="#434040">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold Italic" size="19.0" />
                </font>
             </Label>
-            <Label layoutX="36.0" layoutY="42.0" prefHeight="21.0" prefWidth="319.0" text="LinkedIn" underline="true">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="36.0" layoutY="69.0" prefHeight="21.0" prefWidth="319.0" text="Github" underline="true">
+            <Label fx:id="detailsLinked" layoutX="36.0" layoutY="42.0" prefHeight="21.0" prefWidth="319.0" text="LinkedIn" underline="true">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="36.0" layoutY="95.0" prefHeight="21.0" prefWidth="319.0" text="Facebook" underline="true">
+            <Label fx:id="detailsFacebook" layoutX="36.0" layoutY="95.0" prefHeight="21.0" prefWidth="319.0" text="Facebook" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailsGit" layoutX="36.0" layoutY="69.0" prefHeight="21.0" prefWidth="319.0" text="Github" underline="true">
                <font>
                   <Font size="15.0" />
                </font>
