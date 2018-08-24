@@ -52,20 +52,25 @@ public class LoginController {
         if (!loginUsername.getText().toString().trim().equals("")
                 && !loginPassword.getText().toString().trim().equals(""))
                 {
-                    Stage detailsStage = new Stage();
+                  FXMLLoader loader = new FXMLLoader();
+                  loader.setLocation(getClass().getResource("/sample/view/details.fxml"));
                     try {
-                        FXMLLoader loader = new FXMLLoader();
-
-                        Parent root = loader.load(getClass().getResource("/sample/view/details.fxml"));
-
-                         Scene scene = new Scene(root);
-                        detailsStage.setScene(scene);
-                        detailsStage.show();
-                        detailsStage.setResizable(false);
-
+                        loader.load();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
+                    Parent root = loader.getRoot();
+
+                    Stage stage = new Stage();
+                    stage.setScene(new Scene(root));
+
+                    DetailsController detailsController = loader.getController();
+                    detailsController.setName(loginUsername.getText(), "Junior Java Developer ", 21);
+
+
+
+                    stage.show();
+
 
                 }
     }
