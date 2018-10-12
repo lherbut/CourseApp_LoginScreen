@@ -62,7 +62,8 @@ public class DetailsController {
                     try {
                         Desktop.getDesktop().browse(new URI("https://github.com/lherbut"));
                     } catch (IOException e) {
-                        e.printStackTrace();
+
+                        
                     } catch (URISyntaxException e) {
                         e.printStackTrace();
                     }
